@@ -1,0 +1,10 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore database
+incidents.db
+
+# Optional: ignore system files
+.DS_Store
+Thumbs.db
