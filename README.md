@@ -4,6 +4,14 @@
 It provides a dark-themed, interactive dashboard that simulates cyber attacks, tracks incidents in real-time, and visualizes them by severity, giving a hands-on experience similar to a real SOC environment.
 
 ---
+## Running the Mini-SIEM Dashboard
+
+To start the interactive dashboard, run:
+
+```bash
+python UII.py
+
+---
 
 ## Features
 
