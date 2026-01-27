@@ -15,17 +15,17 @@ python UII.py
 
 ## Features
 
-- **Dark-themed, user-friendly dashboard** with clear incident visualization.
-- **Severity-based color coding** for quick identification:
+- *Dark-themed, user-friendly dashboard* with clear incident visualization.
+- *Severity-based color coding* for quick identification:
   - Critical (red)
   - High (orange)
   - Medium (yellow)
   - Low (green)
-- **Simulate attacks** with a single click to test detection and logging.
-- **Refresh/Clear incidents** directly from the UI.
-- **Exit button** clears all incidents and closes the app.
-- **SQLite database** backend for reliable storage, replacing JSON files.
-- Ready for **real log ingestion** or expansion with real-world detection rules.
+- *Simulate attacks* with a single click to test detection and logging.
+- *Refresh/Clear incidents* directly from the UI.
+- *Exit button* clears all incidents and closes the app.
+- *SQLite database* backend for reliable storage, replacing JSON files.
+- Ready for *real log ingestion* or expansion with real-world detection rules.
 
 ---
 ## Pictures 
