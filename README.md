@@ -27,9 +27,10 @@ python UII.py
 - *SQLite database* backend for reliable storage, replacing JSON files.
 - Ready for *real log ingestion* or expansion with real-world detection rules.
 
+```
 ---
 ## Pictures 
 
-<img width="993" height="623" alt="Untitledk1" src="https://github.com/user-attachments/assets/a919c113-5d21-49ec-b413-3d6abfa6a1a3" />
-<img width="995" height="624" alt="Untitledk2" src="https://github.com/user-attachments/assets/73e7b324-ddf2-44bd-b0dc-b4a71c59260d" />
+<img width="993" height="623" alt="Untitledk1" src="https://github.com/user-attachments/assets/00d6b8e9-8a37-4cfa-befa-d7b1a44d2a36" />
 
+<img width="995" height="624" alt="Untitledk2" src="https://github.com/user-attachments/assets/38120398-35cc-49b9-ac50-f96b38dcbf58" />
