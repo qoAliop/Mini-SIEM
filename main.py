@@ -31,3 +31,8 @@ def run_analysis():
     severity = random.choice(SEVERITIES)
     description = random.choice(DESCRIPTIONS)
     storage.add_incident(type_, severity, description)
+
+```python
+if __name__ != "__main__":
+    print("Please run UII.py to launch the dashboard.")
+    exit()
