@@ -1,5 +1,6 @@
 import storage
 import random
+import correlator
 
 # Call once to create DB
 storage.init_db()
@@ -12,6 +13,17 @@ DESCRIPTIONS = [
     "Malware detected on host",
     "File encrypted by ransomware"
 ]
+
+def run_analysis():
+    # Simulate one attack
+    type_ = random.choice(ATTACK_TYPES)
+    severity = random.choice(SEVERITIES)
+    description = random.choice(DESCRIPTIONS)
+    storage.add_incident(type_, severity, description)
+
+    # Run correlation
+    for c in correlator.correlate():
+        storage.add_incident(c["type"], c["severity"], c["description"])
 
 def run_analysis():
     # Simulate one attack
