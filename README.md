@@ -20,11 +20,8 @@ It provides a dark-themed, interactive dashboard that simulates cyber attacks, t
 - Ready for **real log ingestion** or expansion with real-world detection rules.
 
 ---
+## Pictures 
 
-## Installation
+<img width="993" height="623" alt="Untitledk1" src="https://github.com/user-attachments/assets/a919c113-5d21-49ec-b413-3d6abfa6a1a3" />
+<img width="995" height="624" alt="Untitledk2" src="https://github.com/user-attachments/assets/73e7b324-ddf2-44bd-b0dc-b4a71c59260d" />
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/mini-siem.git
-cd mini-siem
