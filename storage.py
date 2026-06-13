@@ -39,7 +39,6 @@ def init_db():
     conn.commit()
     conn.close()
 
-# ---------- Load Incidents ----------
 def load_incidents():
     conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
