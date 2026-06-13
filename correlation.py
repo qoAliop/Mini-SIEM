@@ -1,4 +1,4 @@
-# correlator.py
+
 from datetime import datetime, timedelta
 import storage
 
@@ -6,7 +6,6 @@ def correlate():
     incidents = storage.load_incidents()
     correlated = []
 
-    # Example: group multiple attacks in the last 5 minutes
     now = datetime.now()
     recent = [
         inc for inc in incidents
