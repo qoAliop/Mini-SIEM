@@ -3,7 +3,6 @@ from tkinter import ttk
 import main
 import storage
 
-# ---------- Colors ----------
 BG = "#2f2f2f"
 FG = "#eeeeee"
 SUB_FG = "#9e9e9e"
@@ -17,7 +16,6 @@ BTN_BLUE_H = "#3498db"
 BTN_GRAY = "#555555"
 BTN_GRAY_H = "#777777"
 
-# Severity row colors
 SEVERITY_STYLE = {
     "Critical": {"bg": "#5c1a1a", "fg": "#ffb3b3"},
     "High":     {"bg": "#5a3314", "fg": "#ffcc99"},
@@ -32,7 +30,6 @@ class SIEMDashboard:
         self.root.geometry("1000x600")
         self.root.configure(bg=BG)
 
-        # ---------- Title ----------
         tk.Label(
             root,
             text="Mini-SIEM Dashboard",
@@ -49,7 +46,6 @@ class SIEMDashboard:
             bg=BG
         ).pack(pady=(0, 10))
 
-        # ---------- Buttons ----------
         btn_frame = tk.Frame(root, bg=BG)
         btn_frame.pack(pady=8)
 
@@ -68,7 +64,6 @@ class SIEMDashboard:
             self.exit_app, BTN_GRAY, BTN_GRAY_H, 12
         ).pack(side="left", padx=6)
 
-        # ---------- Status ----------
         self.status = tk.Label(
             root,
             text="Status: Ready",
@@ -87,11 +82,9 @@ class SIEMDashboard:
         )
         self.counter.pack(pady=(0, 6))
 
-        # ---------- Table ----------
         self.setup_table()
         self.load_incidents()
 
-    # ---------- Button Factory ----------
     def make_button(self, parent, text, cmd, bg, hover, width):
         btn = tk.Button(
             parent,
@@ -108,7 +101,6 @@ class SIEMDashboard:
         btn.bind("<Leave>", lambda e: btn.config(bg=bg))
         return btn
 
-    # ---------- Table ----------
     def setup_table(self):
         style = ttk.Style()
         style.theme_use("default")
@@ -162,7 +154,6 @@ class SIEMDashboard:
 
         self.table.pack(expand=True, fill="both")
 
-    # ---------- Logic 
     def load_incidents(self):
         self.table.delete(*self.table.get_children())
         incidents = storage.load_incidents()
